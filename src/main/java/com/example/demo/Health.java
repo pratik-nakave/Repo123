@@ -24,9 +24,7 @@ public class Health {
 
 	@GetMapping("/healthz")
 	public ResponseEntity<String> healthz() throws URISyntaxException {
-		   //URI location = new URI("http://localhost:8080/api/healthz");
 		   HttpHeaders responseHeaders = new HttpHeaders();
-		   //responseHeaders.setLocation(location);
 		   responseHeaders.set("access-control-allow-credentials", "true");
 		   responseHeaders.set("access-control-allow-headers", "X-Requested-With,Content-Type,Accept,Origin");
 		   responseHeaders.set("access-control-allow-origin", "*");
